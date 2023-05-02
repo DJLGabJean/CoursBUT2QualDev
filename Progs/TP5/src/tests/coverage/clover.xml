@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1678704199927" clover="3.2.0">
+  <project timestamp="1678704199928" name="All files">
+    <metrics statements="10" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1" elements="14" coveredelements="9" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="Main.ts" path="/home/lemair149u/TP_BUT2_Qualdev/Progs/TP5/src/metier/Main.ts">
+      <metrics statements="10" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="11" count="5" type="stmt"/>
+      <line num="13" count="5" type="stmt"/>
+      <line num="14" count="7" type="stmt"/>
+      <line num="17" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="22" count="4" type="stmt"/>
+    </file>
+  </project>
+</coverage>
