@@ -1,10 +1,14 @@
+import { Diffuseur } from "./diffuseur";
+
 export class StationMétéo {
   private _temperature: number;
   private _humidité: number;
+  private _diffuseur: Diffuseur;
 
   constructor(temperature = 0, humidité = 15) {
     this._temperature = temperature;
     this._humidité = humidité;
+    this._diffuseur = new Diffuseur();
   }
 
   public get temperature(): number {
@@ -13,6 +17,7 @@ export class StationMétéo {
 
   public set temperature(temperature: number) {
     this._temperature = temperature;
+    this._diffuseur.notifierChangement(this._temperature, this._humidité);
   }
 
   public get humidité(): number {
@@ -24,6 +29,11 @@ export class StationMétéo {
       throw new Error("L'humidité est exprimée en pourcentage !");
     }
     this._humidité = humidité;
+    this._diffuseur.notifierChangement(this._temperature, this._humidité);
+  }
+
+  public get diffuseur(): Diffuseur {
+    return this._diffuseur;
   }
 
   public toString(): string {

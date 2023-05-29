@@ -8,6 +8,8 @@ function main(): void {
   const aff = new AfficheurTexte();
   const aff2 = new AfficheurGraphique();
   const stationMeteo = new StationMétéo(10);
+  stationMeteo.diffuseur.inscrire(aff);
+  stationMeteo.diffuseur.inscrire(aff2);
 
   console.log("Appuyez sur entrée pour le prochain affichage");
   rs.question();
