@@ -1,8 +1,8 @@
-import { ISouscripteur } from "./ISouscripteur";
+import { IObservateur } from "./IObservateur";
 
 import * as asciichart from "asciichart";
 
-export class AfficheurGraphique implements ISouscripteur {
+export class AfficheurGraphique implements IObservateur {
   private tabTemperature: Array<number>;
   private tabHumidité: Array<number>;
 
